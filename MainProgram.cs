@@ -301,18 +301,18 @@ namespace FlirProjectC3
             ThreadPool.QueueUserWorkItem(DisposeDiscovery, _discovery);
             _discovery = null;
         }
-        private void OK_Click(object sender, EventArgs e)
+       /* private void OK_Click(object sender, EventArgs e)
         {
             Stop();
             DisconnectCamera();
             DisposeCamera();
             Start();
-        }
+        }*/
 
-        private void dis_Click(object sender, EventArgs e)
+      /*  private void dis_Click(object sender, EventArgs e)
         {
             DisconnectCamera();
-        }
+        }*/
 
         private void FlirC3_Load(object sender, EventArgs e)
         {
@@ -349,6 +349,24 @@ namespace FlirProjectC3
         private void Max_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Find_device_click(object sender, EventArgs e)
+        {
+            Stop();
+            DisconnectCamera();
+            DisposeCamera();
+            Start();
+        }
+
+        private void disconnect_Click(object sender, EventArgs e)
+        {
+            DisconnectCamera();
         }
     }
 }
